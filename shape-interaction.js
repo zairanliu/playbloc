@@ -28,7 +28,7 @@ shapes.forEach(shape => {
 
 shapes.forEach(shape => {
     shape.style.display = 'inline-block';
-    shape.style.cursor = 'pointer';
+    // shape.style.cursor = 'pointer';
 
     // Make the shapes not draggable
     shape.setAttribute('draggable', false);

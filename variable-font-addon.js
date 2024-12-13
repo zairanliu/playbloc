@@ -76,7 +76,7 @@ function toggleMoveMode(element) {
         btn.classList.remove('active');
       }
       btn.style.pointerEvents = 'auto';
-      btn.style.cursor = 'pointer';
+      btn.style.cursor = 'none';
     });
     
     // Reset to normal character availability
@@ -96,7 +96,7 @@ function updateSelectableLetters() {
     // Enable all characters in together mode
     document.querySelectorAll('.character-set span').forEach(span => {
       span.classList.remove('disabled');
-      span.style.cursor = 'pointer';
+      span.style.cursor = 'none';
     });
     return;
   }
@@ -108,7 +108,7 @@ function updateSelectableLetters() {
     const letter = span.dataset.letter;
     if (availableLetters.includes(letter)) {
       span.classList.remove('disabled');
-      span.style.cursor = 'pointer';
+      span.style.cursor = 'none';
     } else {
       span.classList.add('disabled');
       span.style.cursor = 'help';
